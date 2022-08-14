@@ -2,11 +2,13 @@
 A simple program that allows you to add buttons to your Discord Status
 
 ## How to use
-1. Create an application on the [dashboard](https://discordapp.com/developers/applications)
-2. Copy the `Application ID`
-3. Run the program, a file called `config.json` will be created in the same directory as the program
-4. Enter the `Application ID` you copied in step 2 into the `Application ID` field
-5. Setup the buttons
+1. Download the latest version of the program from [Here](https://github.com/vulcan-dev/discord-status/releases/tag/v0.1)
+2. Create an application on the [dashboard](https://discordapp.com/developers/applications)
+3. Copy the `Application ID`
+4. Run the program to generate `config.json`
+5. Enter the `Application ID` you copied in step 2 into the `Application ID` field
+6. Setup the buttons
+7. Run the program again
 
 ## JSON Example
 ```json
