@@ -25,3 +25,6 @@ A simple program that allows you to add buttons to your Discord Status
   ]
 }
 ```
+
+## Image Example
+![](https://imgur.com/1hLoy5F.png)
