@@ -10,7 +10,7 @@ A simple program that allows you to add buttons to your Discord Status
 6. Setup the buttons
 7. Run the program again
 
-## JSON Example
+## JSON Example (Note: Max of 2 buttons)
 ```json
 {
   "application_id": "YOUR_APPLICATION_ID",
