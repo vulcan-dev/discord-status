@@ -50,6 +50,14 @@ fn main() {
         return;
     }
 
+    if config.buttons.is_empty() {
+        println!("Please set your buttons in config.json");
+        return;
+    } else if config.buttons.len() > 2 {
+        println!("Only 2 buttons are supported");
+        return;
+    }
+
     println!("Running Discord Rich Presence, type 'exit' to exit");
 
     let mut buttons = Vec::new();
