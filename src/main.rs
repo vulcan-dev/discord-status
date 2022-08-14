@@ -47,14 +47,17 @@ fn main() {
     let config = get_config();
     if config.application_id.is_empty() {
         println!("Please set your client ID in config.json");
+        std::thread::sleep(std::time::Duration::from_secs(1));
         return;
     }
 
     if config.buttons.is_empty() {
         println!("Please set your buttons in config.json");
+        std::thread::sleep(std::time::Duration::from_secs(1));
         return;
     } else if config.buttons.len() > 2 {
         println!("Only 2 buttons are supported");
+        std::thread::sleep(std::time::Duration::from_secs(1));
         return;
     }
 
