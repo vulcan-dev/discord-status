@@ -74,10 +74,17 @@ fn main() {
     client.connect()
         .expect("Failed to connect to Discord");
 
-    client.set_activity(Activity::new()
+    // add details if they are set
+    if let Some(details) = &config.details {
+        client.set_activity(Activity::new()
+            .details(&details)
+            .buttons(buttons)
+        ).expect("Failed to set activity");
+    } else {
+        client.set_activity(Activity::new()
         .buttons(buttons)
-        .details(&config.details.unwrap_or("Awesome Buttons".to_string()))
-    ).expect("Failed to set activity");
+        ).expect("Failed to set activity");
+    }
 
     loop {
         let mut input = String::new();
